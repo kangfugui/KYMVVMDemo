@@ -8,20 +8,61 @@
 
 /* Begin PBXBuildFile section */
 		840B90A81E97A94B00A7D5CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B90A71E97A94B00A7D5CF /* AppDelegate.swift */; };
-		840B90AA1E97A94B00A7D5CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B90A91E97A94B00A7D5CF /* ViewController.swift */; };
-		840B90AD1E97A94B00A7D5CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840B90AB1E97A94B00A7D5CF /* Main.storyboard */; };
 		840B90AF1E97A94B00A7D5CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840B90AE1E97A94B00A7D5CF /* Assets.xcassets */; };
 		840B90B21E97A94B00A7D5CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840B90B01E97A94B00A7D5CF /* LaunchScreen.storyboard */; };
+		843D26881E97AC2500FA00EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843D26871E97AC2500FA00EF /* UIKit.framework */; };
+		843D268A1E97AC2800FA00EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843D26891E97AC2800FA00EF /* Foundation.framework */; };
+		843D268C1E97AC4400FA00EF /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843D268B1E97AC4300FA00EF /* RxSwift.framework */; };
+		843D268E1E97AC5300FA00EF /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843D268D1E97AC5300FA00EF /* RxCocoa.framework */; };
+		843D26941E97ACDD00FA00EF /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D26931E97ACDD00FA00EF /* UIViewController+Rx.swift */; };
+		843D26981E97ACF100FA00EF /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D26951E97ACF100FA00EF /* ServiceProvider.swift */; };
+		843D26991E97ACF100FA00EF /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D26961E97ACF100FA00EF /* BaseService.swift */; };
+		843D269A1E97ACF100FA00EF /* PayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D26971E97ACF100FA00EF /* PayService.swift */; };
+		843D269E1E97ACF900FA00EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D269B1E97ACF900FA00EF /* ViewController.swift */; };
+		843D269F1E97ACF900FA00EF /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843D269C1E97ACF900FA00EF /* ViewController.xib */; };
+		843D26A01E97ACF900FA00EF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D269D1E97ACF900FA00EF /* BaseViewController.swift */; };
+		843D26A41E97AD0000FA00EF /* CardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D26A11E97AD0000FA00EF /* CardType.swift */; };
+		843D26A51E97AD0000FA00EF /* String+CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D26A21E97AD0000FA00EF /* String+CreditCard.swift */; };
+		843D26A61E97AD0000FA00EF /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D26A31E97AD0000FA00EF /* ViewModel.swift */; };
+		843D26A81E97AD3400FA00EF /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 843D268D1E97AC5300FA00EF /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		843D26AA1E97AD3400FA00EF /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 843D268B1E97AC4300FA00EF /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		843D26AB1E97AD3400FA00EF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				843D26AA1E97AD3400FA00EF /* RxSwift.framework in Embed Frameworks */,
+				843D26A81E97AD3400FA00EF /* RxCocoa.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		840B90A41E97A94B00A7D5CF /* KYMVVMDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KYMVVMDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		840B90A71E97A94B00A7D5CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		840B90A91E97A94B00A7D5CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		840B90AC1E97A94B00A7D5CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		840B90AE1E97A94B00A7D5CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		840B90B11E97A94B00A7D5CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		840B90B31E97A94B00A7D5CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		843D26871E97AC2500FA00EF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		843D26891E97AC2800FA00EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		843D268B1E97AC4300FA00EF /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		843D268D1E97AC5300FA00EF /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		843D26931E97ACDD00FA00EF /* UIViewController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
+		843D26951E97ACF100FA00EF /* ServiceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
+		843D26961E97ACF100FA00EF /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		843D26971E97ACF100FA00EF /* PayService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayService.swift; sourceTree = "<group>"; };
+		843D269B1E97ACF900FA00EF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		843D269C1E97ACF900FA00EF /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		843D269D1E97ACF900FA00EF /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		843D26A11E97AD0000FA00EF /* CardType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardType.swift; sourceTree = "<group>"; };
+		843D26A21E97AD0000FA00EF /* String+CreditCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+CreditCard.swift"; sourceTree = "<group>"; };
+		843D26A31E97AD0000FA00EF /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +70,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843D268E1E97AC5300FA00EF /* RxCocoa.framework in Frameworks */,
+				843D268A1E97AC2800FA00EF /* Foundation.framework in Frameworks */,
+				843D26881E97AC2500FA00EF /* UIKit.framework in Frameworks */,
+				843D268C1E97AC4400FA00EF /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +85,7 @@
 			children = (
 				840B90A61E97A94B00A7D5CF /* KYMVVMDemo */,
 				840B90A51E97A94B00A7D5CF /* Products */,
+				843D26861E97AC2500FA00EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +100,65 @@
 		840B90A61E97A94B00A7D5CF /* KYMVVMDemo */ = {
 			isa = PBXGroup;
 			children = (
+				843D26921E97ACD500FA00EF /* Rx */,
+				843D26911E97ACCF00FA00EF /* Services */,
+				843D26901E97ACCA00FA00EF /* Views */,
+				843D268F1E97ACB900FA00EF /* ViewModel */,
 				840B90A71E97A94B00A7D5CF /* AppDelegate.swift */,
-				840B90A91E97A94B00A7D5CF /* ViewController.swift */,
-				840B90AB1E97A94B00A7D5CF /* Main.storyboard */,
 				840B90AE1E97A94B00A7D5CF /* Assets.xcassets */,
 				840B90B01E97A94B00A7D5CF /* LaunchScreen.storyboard */,
 				840B90B31E97A94B00A7D5CF /* Info.plist */,
 			);
 			path = KYMVVMDemo;
+			sourceTree = "<group>";
+		};
+		843D26861E97AC2500FA00EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				843D268D1E97AC5300FA00EF /* RxCocoa.framework */,
+				843D268B1E97AC4300FA00EF /* RxSwift.framework */,
+				843D26891E97AC2800FA00EF /* Foundation.framework */,
+				843D26871E97AC2500FA00EF /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		843D268F1E97ACB900FA00EF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				843D26A11E97AD0000FA00EF /* CardType.swift */,
+				843D26A21E97AD0000FA00EF /* String+CreditCard.swift */,
+				843D26A31E97AD0000FA00EF /* ViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		843D26901E97ACCA00FA00EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				843D269B1E97ACF900FA00EF /* ViewController.swift */,
+				843D269C1E97ACF900FA00EF /* ViewController.xib */,
+				843D269D1E97ACF900FA00EF /* BaseViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		843D26911E97ACCF00FA00EF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				843D26951E97ACF100FA00EF /* ServiceProvider.swift */,
+				843D26961E97ACF100FA00EF /* BaseService.swift */,
+				843D26971E97ACF100FA00EF /* PayService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		843D26921E97ACD500FA00EF /* Rx */ = {
+			isa = PBXGroup;
+			children = (
+				843D26931E97ACDD00FA00EF /* UIViewController+Rx.swift */,
+			);
+			name = Rx;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +171,7 @@
 				840B90A01E97A94B00A7D5CF /* Sources */,
 				840B90A11E97A94B00A7D5CF /* Frameworks */,
 				840B90A21E97A94B00A7D5CF /* Resources */,
+				843D26AB1E97AD3400FA00EF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,8 +222,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				840B90B21E97A94B00A7D5CF /* LaunchScreen.storyboard in Resources */,
+				843D269F1E97ACF900FA00EF /* ViewController.xib in Resources */,
 				840B90AF1E97A94B00A7D5CF /* Assets.xcassets in Resources */,
-				840B90AD1E97A94B00A7D5CF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +234,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				840B90AA1E97A94B00A7D5CF /* ViewController.swift in Sources */,
+				843D26A61E97AD0000FA00EF /* ViewModel.swift in Sources */,
+				843D269E1E97ACF900FA00EF /* ViewController.swift in Sources */,
+				843D26A51E97AD0000FA00EF /* String+CreditCard.swift in Sources */,
+				843D269A1E97ACF100FA00EF /* PayService.swift in Sources */,
+				843D26991E97ACF100FA00EF /* BaseService.swift in Sources */,
+				843D26981E97ACF100FA00EF /* ServiceProvider.swift in Sources */,
+				843D26941E97ACDD00FA00EF /* UIViewController+Rx.swift in Sources */,
+				843D26A41E97AD0000FA00EF /* CardType.swift in Sources */,
+				843D26A01E97ACF900FA00EF /* BaseViewController.swift in Sources */,
 				840B90A81E97A94B00A7D5CF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,14 +250,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		840B90AB1E97A94B00A7D5CF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				840B90AC1E97A94B00A7D5CF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		840B90B01E97A94B00A7D5CF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -258,6 +356,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = KYMVVMDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kangyang.KYMVVMDemo;
@@ -270,6 +372,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = KYMVVMDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kangyang.KYMVVMDemo;
@@ -297,6 +403,7 @@
 				840B90B81E97A94B00A7D5CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
